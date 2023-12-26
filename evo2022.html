@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title> EVO 2022</title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1894.6">
+    <link rel="stylesheet" href="gallery.css">
+  </head>
+  
+  <body>
+    
+    <header>
+       <nav id="nav" class="nav">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><h2>Gallery</h2></li>
+            <li><a href="/NewYork">NewYork</a></li>
+            <li><a href="/fioli">Fioli</a></li>
+            <li><a href="#">EVO 2022</a></li>
+            <li><a href="#">CEO 2022</a></li>
+            <li><a href="#">Genesis 8</a></li>
+            <li><a href="/index">home</a></li>
+          </div>
+        </div>
+      </nav>
+      <h1>Kristian Campos Photography</h1>
+    </header>
+
+    <div>
+      <h2>EVO Championship Series 2022</h>
+    </div>
+    
+    <!-- Images used to open the lightbox -->
+    <div id="thumbnails" class="gallery">
+      <img class="hover-shadow" src="/photos/evo2022/game4.JPG" alt="gaming" onclick="openModal();currentSlide(1)">
+      <img class="hover-shadow" src="/photos/evo2022/game1.JPG" alt="gaming" onclick="openModal();currentSlide(2)">
+      <img class="hover-shadow" src="/photos/evo2022/dinner.JPG" alt="dinner" onclick="openModal();currentSlide(3)">
+      <img class="hover-shadow" src="/photos/evo2022/friends.JPG" alt="group photo" onclick="openModal();currentSlide(4)">
+      <img class="hover-shadow" src="/photos/evo2022/spectators2.JPG" alt="spectators" onclick="openModal();currentSlide(5)">
+      <img class="hover-shadow" src="/photos/evo2022/game2.JPG" alt="gaming" onclick="openModal();currentSlide(6)">
+      <img class="hover-shadow" src="/photos/evo2022/spectators1.JPG" alt="spectators" onclick="openModal();currentSlide(7)">
+      <img class="hover-shadow" src="/photos/evo2022/closeup2.JPG" alt="close up photo" onclick="openModal();currentSlide(8)">
+      <img class="hover-shadow" src="/photos/evo2022/bar1.JPG" alt="person in bar" onclick="openModal();currentSlide(9)">
+      <img class="hover-shadow" src="/photos/evo2022/closeup1.JPG" alt="portrait photo" onclick="openModal();currentSlide(10)">
+      <img class="hover-shadow" src="/photos/evo2022/game3.JPG" alt="gaming" onclick="openModal();currentSlide(11)">
+      <img class="hover-shadow" src="/photos/evo2022/bar2.JPG" alt="person in suit" onclick="openModal();currentSlide(12)">
+    </div>
+
+
+    <!-- The Lightbox -->
+    <div id="myModal" class="modal">
+
+      <span id="close" class="close">&times;</span>
+      
+      <div class="modal-content">
+        
+        <div class="mySlides"><img src="/photos/evo2022/game4.JPG" alt="gaming"></div>
+          
+          <div class="mySlides"><img src="/photos/evo2022/game1.JPG" alt="gaming"></div>
+          
+          <div class="mySlides"><img src="/photos/evo2022/dinner.JPG" alt="dinner"></div>
+          
+          <div class="mySlides"><img src="/photos/evo2022/friends.JPG" alt="group photo"></div>
+
+          <div class="mySlides"><img src="/photos//evo2022/spectators2.JPG" alt="spectators"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/game2.JPG" alt="gaming"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/spectators1.JPG" alt="spectators"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/closeup1.JPG" alt="close up photo"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/bar1.JPG" alt="person in bar"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/closeup1.JPG" alt="portrait photo"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/game3.JPG" alt="gaming"></div>
+
+          <div class="mySlides"><img src="/photos/evo2022/bar2.JPG" alt="person in suit"></div>
+        
+        <!-- Next/previous controls -->
+        <div class="controls">
+          <a class="prev" onclick="plusSlides(-1)">&#10094 prev</a>
+
+          <a class="next" onclick="plusSlides(1)">next &#10095;</a>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="foot">
+    </footer>
+    
+    <script src="gallery.js"></script>
+  </body>
+</html>

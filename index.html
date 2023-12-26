@@ -1,53 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <nav>
-    <div class="nav">
-      <div class="nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title> Kristian Campos Photography </title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1894.6">
+    <link rel="stylesheet" href="gallery.css">
+  </head>
+  
+  <body>
+    
+    <header>
+       <nav id="nav" class="nav">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><h2>Gallery</h2></li>
+            <li><a href="/NewYork">NewYork</a></li>
+            <li><a href="/fioli">Fioli</a></li>
+            <li><a href="/evo2022.html">EVO 2022</a></li>
+            <li><a href="/ceo2022">CEO 2022</a></li>
+            <li><a href="/genesis8">Genesis 8</a></li>
+            <li><a href="#">home</a></li>
+          </div>
         </div>
-        <div class="menu-items">
-          <li>Gallery</li>
-          <li><a href="/New York">New York</a></li>
-          <li><a href="#">EVO 2023</a></li>
-          <li><a href="#">CEO 2023</a></li>
-          <li><a href="#">Genesis 7</a></li>
-          <li><a href="#">contact</a></li>
-        </div>
-      </div>
+      </nav>
+      <h1>Kristian Campos Photography</h1>
+    </header>
+
+    <div>
+      <h2>Featured Photos</h>
     </div>
-  </nav>
-
-  <header>
-    <h1>Kristian Campos Photography</h1>
-
-  </header>
-
-
-  <div class="gallery">
-    <img src="/photos/car.jpg" alt="car">
-    <img src="/photos/controllers.jpg" alt="">
-    <img src="/photos/moped3.jpg" alt="">
-    <img src="/photos/crow.jpg" alt="">
-    <img src="/photos/moped2.jpg" alt="">
-    <img src="/photos/crowd.jpg" alt="">
-    <img src="/photos/flower1.jpg" alt="">
-    <img src="/photos/moped1.jpg" alt="">
-  </div>
-
-</body>
-
+    
+    <!-- Images used to open the lightbox -->
+    <div id="thumbnails" class="gallery">
+      <img class="hover-shadow" src="./photos/NewYork/kanye.jpg" onclick="openModal();currentSlide(1)">
+      <img class="hover-shadow" src="./photos/NewYork/bird.jpg" onclick="openModal();currentSlide(2)">
+      <img class="hover-shadow" src="./photos/NewYork/moped.jpg" onclick="openModal();currentSlide(3)">
+      <img class="hover-shadow" src="/photos/NewYork/rug.jpg" onclick="openModal();currentSlide(4)">
+      <img class="hover-shadow" src="/photos/NewYork/bridge.jpg" onclick="openModal();currentSlide(5)">
+      <img class="hover-shadow" src="/photos/NewYork/mural1.jpg" onclick="openModal();currentSlide(6)">
+      <img class="hover-shadow" src="/photos/NewYork/street.jpg" onclick="openModal();currentSlide(7)">
+      <img class="hover-shadow" src="/photos/NewYork/fog.jpg" onclick="openModal();currentSlide(8)">
+      <img class="hover-shadow" src="/photos/NewYork/moped2.jpg" onclick="openModal();currentSlide(9)">
+      <img class="hover-shadow" src="/photos/NewYork/bridge2.jpg" onclick="openModal();currentSlide(10)">
+      <img class="hover-shadow" src="/photos/NewYork/skateboards.jpg" onclick="openModal();currentSlide(11)">
+      <img class="hover-shadow" src="/photos/NewYork/art.jpg" onclick="openModal();currentSlide(12)">
+    </div>
+    
+    <footer class="foot">
+    </footer>
+    
+    <script src="gallery.js"></script>
+  </body>
 </html>

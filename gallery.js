@@ -1,10 +1,22 @@
+/* open lightbox */
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+  document.getElementById("nav").style.display = "none";
+  document.body.style.overflow = 'hidden';
 }
+
+/* close lightbox */
+
+document.getElementById("close").onclick = function() {closeModal()};
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  document.getElementById( "nav").style.display = "block";
+  document.body.style.overflow = 'visible';
 }
+
+/* slides */
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -20,17 +32,10 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }

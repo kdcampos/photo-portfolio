@@ -1,113 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 <html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title> New York </title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1894.6">
-  <link rel="stylesheet" href="gallery.css">
-  <script src="gallery.js"></script>
-
-</head>
-
-<body>
-
-  <nav>
-    <div class="nav">
-      <div class="nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title> New York </title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1894.6">
+    <link rel="stylesheet" href="gallery.css">
+  </head>
+  
+  <body>
+    
+    <header>
+       <nav id="nav" class="nav">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="menu-items">
+            <li><h2>Gallery</h2></li>
+            <li><a href="#">NewYork</a></li>
+            <li><a href="/fioli">Fioli</a></li>
+            <li><a href="/evo2022">EVO 2023</a></li>
+            <li><a href="/ceo2022">CEO 2023</a></li>
+            <li><a href="/genesis8">Genesis 7</a></li>
+            <li><a href="/index">home</a></li>
+          </div>
         </div>
-        <div class="menu-items">
-          <li><a href="/index">home</a></li>
-          <li>Gallery</li>
-          <li><a href="/New York">New York</a></li>
-          <li><a href="#">EVO 2023</a></li>
-          <li><a href="#">CEO 2023</a></li>
-          <li><a href="#">Genesis 7</a></li>
-          <li><a href="#">contact</a></li>
+      </nav>
+      <h1>Kristian Campos Photography</h1>
+    </header>
+
+    <div>
+      <h2>New York</h>
+    </div>
+    
+    <!-- Images used to open the lightbox -->
+    <div id="thumbnails" class="gallery">
+      <img class="hover-shadow" src="./photos/NewYork/kanye.jpg">
+      <img class="hover-shadow" src="./photos/NewYork/bird.jpg">
+      <img class="hover-shadow" src="./photos/NewYork/moped.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/rug.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/bridge.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/mural1.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/street.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/fog.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/moped2.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/bridge2.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/skateboards.jpg">
+      <img class="hover-shadow" src="/photos/NewYork/art.jpg">
+    </div>
+
+
+    <!-- The Lightbox -->
+    <div id="myModal" class="modal">
+
+      <span id="close" class="close">&times;</span>
+      
+      <div class="modal-content">
+        
+        <div class="mySlides"><img src="/photos/NewYork/kanye.jpg" alt="kanye west"></div>
+          
+          <div class="mySlides"><img src="/photos/NewYork/bird.jpg" alt="bird"></div>
+          
+          <div class="mySlides"><img src="/photos/NewYork/moped.jpg" alt="red moped"></div>
+          
+          <div class="mySlides"><img src="/photos/NewYork/rug.jpg" alt="supreme rug"></div>
+
+          <div class="mySlides"><img src="/photos//NewYork/bridge.jpg" alt="bridge from alleyway"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/mural1.jpg" alt="mural"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/street.jpg" alt="streets"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/fog.jpg" alt="foggy streets"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/moped2.jpg" alt="black moped"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/bridge2.jpg" alt="photo on bridge"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/skateboards.jpg" alt="wall of skateboards"></div>
+
+          <div class="mySlides"><img src="/photos/NewYork/art.jpg" alt="street art"></div>
+        
+        <!-- Next/previous controls -->
+        <div class="controls">
+          <a class="prev" onclick="plusSlides(-1)">&#10094 prev</a>
+
+          <a class="next" onclick="plusSlides(1)">next &#10095;</a>
         </div>
       </div>
     </div>
-  </nav>
-
-  <header>
-    <h1>Kristian Campos Photography</h1>
-  </header>
-  <h2>New York</h2>
-
-  <!-- Images used to open the lightbox -->
-  <div class="row">
-    <div class="column">
-      <img src="./photos/New York/kanye.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="./photos/New York/bird.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="./photos/New York/moped.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="/photos/New York/rug.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    </div>
-  </div>
-
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-
-
-    <div class="modal-content">
-
-      <!-- previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-
-      <div class="mySlides">
-        <img src="/photos/New York/kanye.jpg">
-      </div>
-
-      <div class="mySlides">
-        <img src="/photos/New York/bird.jpg">
-      </div>
-
-      <div class="mySlides">
-        <img src="/photos/New York/moped.jpg">
-      </div>
-
-      <div class="mySlides">
-        <img src="/photos/New York/rug.jpg">
-      </div>
-
-      <!-- Next controls -->
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="/photos/New York/kanye.jpg" onclick="currentSlide(1)" alt="Nature">
-      </div>
-
-      <div class="column">
-        <img class="demo" src="/photos/New York/bird.jpg" onclick="currentSlide(2)" alt="Snow">
-      </div>
-
-      <div class="column">
-        <img class="demo" src="/photos/New York/moped.jpg" onclick="currentSlide(3)" alt="Mountains">
-      </div>
-
-      <div class="column">
-        <img class="demo" src="/photos/New York/rug.jpg" onclick="currentSlide(4)" alt="Lights">
-      </div>
-    </div>
-  </div>
-
-  <footer class="foot">
-    footer
-
-  </footer>
-
+    
+    <footer class="foot">
+    </footer>
+    
+    <script src="gallery.js"></script>
+  </body>
 </html>
