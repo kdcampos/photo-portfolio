@@ -1,18 +1,74 @@
-body {
-    text-align: center;
-    background: #0e0e0e;
-    color: whitesmoke;
+/* body */
+
+header {
+    display: block;
 }
+
+body {
+    background: #0e0d0d;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* homepage */
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.page-link {
+    width: 20%;
+    margin: 2%;
+    transition: 0.2s;
+}
+
+.page-link img {
+    padding: 0;
+    width: 100%;
+}
+
+.page-link img:hover {
+    box-shadow: 0 4px 8px 0 #4e4e4e;
+    cursor: pointer;
+}
+
+/* photo thumbnails */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.hover-shadow {
+    width: 20%;
+    margin: 2%;
+    transition: 0.2s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 #4e4e4e;
+    cursor: pointer;
+}
+
+/* sidebar */
 
 .nav {
     width: 10%;
+    position: fixed;
+    text-align: start;
 }
 
 .nav-container {
     display: block;
     position: relative;
     justify-content: space-between;
-    align-items: center;
     height: 60px;
 }
 
@@ -27,9 +83,6 @@ body {
 .nav-container a {
     text-decoration: none;
     color: whitesmoke;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 0.7rem;
 }
 
 .checkbox {
@@ -37,7 +90,6 @@ body {
     display: block;
     height: 32px;
     width: 32px;
-    top: 20px;
     left: 20px;
     z-index: 5;
     opacity: 0;
@@ -45,13 +97,10 @@ body {
 }
 
 .hamburger-lines {
-    display: block;
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 17px;
     left: 20px;
-    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,19 +130,17 @@ body {
 
 .menu-items {
     padding-top: 100px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     transform: translate(-150%);
-    margin-left: -40px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    text-align: left;
 }
 
 .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
+    text-align: start;
 }
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -116,13 +163,130 @@ body {
     display: none;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10%;
+/* lightbox background */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    overflow: hidden;
 }
 
-img {
-    width: 23%;
-    margin: 10px;
+/* lightbox Content */
+
+.modal-content {
+    position: relative;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 75%;
+}
+
+/* Next & previous buttons */
+
+.controls {
+    margin-top: 50px;
+}
+
+.prev,
+.next {
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    color: #999;
+}
+
+/* mobile view */
+
+@media  screen and (max-width: 640px) {
+
+
+    h1,h2,h3 {
+        font-size: medium;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 35%;
+        margin: 2%;
+    }
+
+    .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: whitesmoke;
+    }
+
+    .menu-items li {
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: start;
+    }
+}
+
+/* tablet view */
+
+@media screen and (max-width: 990px) {
+
+    .menu-items a {
+        font-size: medium;
+    }
+    .gallery img {
+        width: 25%;
+        margin: 2%;
+    }
 }

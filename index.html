@@ -6,11 +6,12 @@
     <title> Kristian Campos Photography </title>
     <meta name="Generator" content="Cocoa HTML Writer">
     <meta name="CocoaVersion" content="1894.6">
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
     
+    <!-- header with nav -->
     <header>
        <nav id="nav" class="nav">
         <div class="nav-container">
@@ -33,25 +34,24 @@
       </nav>
       <h1>Kristian Campos Photography</h1>
     </header>
-
-    <div>
-      <h2>Featured Photos</h>
-    </div>
     
-    <!-- Images used to open the lightbox -->
-    <div id="thumbnails" class="gallery">
-      <img class="hover-shadow" src="./photos/NewYork/kanye.jpg" onclick="openModal();currentSlide(1)">
-      <img class="hover-shadow" src="./photos/NewYork/bird.jpg" onclick="openModal();currentSlide(2)">
-      <img class="hover-shadow" src="./photos/NewYork/moped.jpg" onclick="openModal();currentSlide(3)">
-      <img class="hover-shadow" src="/photos/NewYork/rug.jpg" onclick="openModal();currentSlide(4)">
-      <img class="hover-shadow" src="/photos/NewYork/bridge.jpg" onclick="openModal();currentSlide(5)">
-      <img class="hover-shadow" src="/photos/NewYork/mural1.jpg" onclick="openModal();currentSlide(6)">
-      <img class="hover-shadow" src="/photos/NewYork/street.jpg" onclick="openModal();currentSlide(7)">
-      <img class="hover-shadow" src="/photos/NewYork/fog.jpg" onclick="openModal();currentSlide(8)">
-      <img class="hover-shadow" src="/photos/NewYork/moped2.jpg" onclick="openModal();currentSlide(9)">
-      <img class="hover-shadow" src="/photos/NewYork/bridge2.jpg" onclick="openModal();currentSlide(10)">
-      <img class="hover-shadow" src="/photos/NewYork/skateboards.jpg" onclick="openModal();currentSlide(11)">
-      <img class="hover-shadow" src="/photos/NewYork/art.jpg" onclick="openModal();currentSlide(12)">
+    <div class="featured">
+
+      <a class="page-link" href="genesis7.html">
+        <img src="./photos/genesis7/skyline.jpg" alt="buildings in the middle of a city">
+      </a>
+
+      <a class="page-link" href="./fioli.html">
+        <img src="./photos/Fioli/purple_flower.jpg" alt="">
+      </a>
+
+      <a class="page-link" href="./newyork.html">
+        <img src="./photos/NewYork/moped.jpg" alt="red moped">
+      </a>
+
+      <a class="page-link" href="./ceo2022.html">
+        <img src="./photos/ceo2022/arcade2.JPG" alt="">
+      </a>
     </div>
     
     <footer class="foot">
