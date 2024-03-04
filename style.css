@@ -60,7 +60,7 @@ body {
 /* sidebar */
 
 .nav {
-    width: 10%;
+    width: 15%;
     position: fixed;
     text-align: start;
 }
@@ -243,11 +243,27 @@ body {
 
 /* mobile view */
 
-@media  screen and (max-width: 640px) {
+@media  screen and (max-width: 990px) {
+
+    .page-link {
+        width: 35%;
+        margin: 2%;
+        transition: 0.2s;
+    }
+    
+    .page-link img {
+        padding: 0;
+        width: 100%;
+    }
+    
+    .page-link img:hover {
+        box-shadow: 0 4px 8px 0 #4e4e4e;
+        cursor: pointer;
+    }
 
 
     h1,h2,h3 {
-        font-size: medium;
+        font-size: large;
     }
 
     .gallery {
@@ -280,7 +296,7 @@ body {
 
 /* tablet view */
 
-@media screen and (max-width: 990px) {
+/* @media screen and (max-width: 990px) {
 
     .menu-items a {
         font-size: medium;
