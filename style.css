@@ -185,7 +185,7 @@ body {
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 60vmax;
 }
 
 /* Close Button */
@@ -279,6 +279,12 @@ body {
         margin: 2%;
     }
 
+    .nav {
+        width: 20%;
+        position: fixed;
+        text-align: start;
+    }
+
     .line {
         display: block;
         height: 4px;
@@ -287,16 +293,41 @@ body {
     }
 
     .menu-items li {
-        margin-bottom: 1.2rem;
-        font-size: 1rem;
-        font-weight: 500;
+        margin-bottom: 0%;
+        font-size: 32px;
         text-align: start;
+    }
+
+    .modal-content {
+        position: relative;
+        margin-top: 25%;
+        margin-bottom: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .controls {
+        margin-top: 50px;
+    }
+    
+    .prev,
+    .next {
+        margin-left: 50px;
+        margin-right: 50px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
     }
 }
 
 /* tablet view */
 
-/* @media screen and (max-width: 990px) {
+@media screen and (max-width: 990px) {
 
     .menu-items a {
         font-size: medium;
