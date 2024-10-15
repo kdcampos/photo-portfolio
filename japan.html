@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title> Japan </title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1894.6">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    
+    <header>
+       <nav id="nav" class="nav">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+
+          <div class="menu-items">
+            <li><h2>Gallery</h2></li>
+            <li><a href="/newyork">New York</a></li>
+            <li> <a href="#">Japan</a></li>
+            <li><a href="/fioli">Fioli</a></li>
+            <li><a href="/evo2022">EVO 2022</a></li>
+            <li><a href="/ceo2022">CEO 2022</a></li>
+            <li><a href="/genesis7">Genesis 7</a></li>
+            <li> <a href="/japan">Japan</a></li>
+            <li><a href="/">home</a></li>
+          </div>
+        </div>
+      </nav>
+      <h1>Kristian Campos Photography</h1>
+    </header>
+
+    <div>
+      <h2>Japan</h>
+    </div>
+    
+    <!-- Images used to open the lightbox -->
+    <div id="thumbnails" class="gallery">
+      <img class="hover-shadow" src="./photos/Japan/building.JPG" alt="building" onclick="openModal();currentSlide(1)">
+      <img class="hover-shadow" src="./photos/Japan/river.JPG" alt="river" onclick="openModal();currentSlide(2)">
+      <img class="hover-shadow" src="./photos/Japan/moped.JPG" alt="blue moped" onclick="openModal();currentSlide(3)">
+      <img class="hover-shadow" src="./photos/Japan/bamboo.JPG" alt="bamboo forest" onclick="openModal();currentSlide(4)">
+      <img class="hover-shadow" src="./photos/Japan/performer.JPG" alt="street performer" onclick="openModal();currentSlide(5)">
+      <img class="hover-shadow" src="./photos/Japan/monkey.JPG" alt="monkey" onclick="openModal();currentSlide(6)">
+      <img class="hover-shadow" src="./photos/Japan/bamboo2.JPG" alt="bamboo forest" onclick="openModal();currentSlide(7)">
+      <img class="hover-shadow" src="./photos/Japan/portrait.JPG" alt="portrait" onclick="openModal();currentSlide(8)">
+      <img class="hover-shadow" src="./photos/Japan/penguin.JPG" alt="penguin" onclick="openModal();currentSlide(9)">
+      <img class="hover-shadow" src="./photos/Japan/karts.JPG" alt="karts" onclick="openModal();currentSlide(10)">
+      <img class="hover-shadow" src="./photos/Japan/nakano.JPG" alt="streets at night" onclick="openModal();currentSlide(11)">
+      <img class="hover-shadow" src="./photos/Japan/starry.JPG" alt="music venue" onclick="openModal();currentSlide(12)">
+    </div>
+
+
+    <!-- The Lightbox -->
+    <div id="myModal" class="modal">
+
+      <span id="close" class="close">&times;</span>
+      
+      <div class="modal-content">
+        <div class="mySlides"><img src="./photos/Japan/building.JPG" alt="building"></div>
+        <div class="mySlides"><img src="./photos/Japan/river.JPG" alt="river"></div>   
+        <div class="mySlides"><img src="./photos/Japan/moped.JPG" alt="blue moped"></div>
+        <div class="mySlides"><img src="./photos/Japan/bamboo.JPG" alt="bamboo forest"></div>
+        <div class="mySlides"><img src="./photos//Japan/performer.JPG" alt="street performer"></div>
+        <div class="mySlides"><img src="./photos/Japan/monkey.JPG" alt="monkey"></div>
+        <div class="mySlides"><img src="./photos/Japan/bamboo2.JPG" alt="bamboo forest"></div>
+        <div class="mySlides"><img src="./photos/Japan/portrait.JPG" alt="portrait"></div>
+        <div class="mySlides"><img src="./photos/Japan/penguin.JPG" alt="penguin"></div>
+        <div class="mySlides"><img src="./photos/Japan/karts.JPG" alt="karts"></div>
+        <div class="mySlides"><img src="./photos/Japan/nakano.JPG" alt="wall of skateboards"></div>
+        <div class="mySlides"><img src="./photos/Japan/starry.JPG" alt="street art"></div>
+        
+        <!-- Next/previous controls -->
+        <div class="controls">
+          <a class="prev" onclick="plusSlides(-1)">&#10094 prev</a>
+
+          <a class="next" onclick="plusSlides(1)">next &#10095;</a>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="foot">
+    </footer>
+    
+    <script src="gallery.js"></script>
+  </body>
+</html>
