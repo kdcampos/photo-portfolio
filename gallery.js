@@ -3,7 +3,6 @@
 function openModal() {
   document.getElementById("myModal").style.display = "block";
   document.getElementById("nav").style.display = "none";
-  document.body.style.overflow = 'hidden';
 }
 
 /* close lightbox */
