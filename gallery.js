@@ -11,7 +11,7 @@ document.getElementById("close").onclick = function() {closeModal()};
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
-  document.getElementById( "nav").style.display = "block";
+  document.getElementById( "nav").style.display = "flex";
   document.body.style.overflow = 'visible';
 }
 
